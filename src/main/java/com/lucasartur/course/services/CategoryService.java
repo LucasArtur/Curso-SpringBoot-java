@@ -3,6 +3,7 @@ package com.lucasartur.course.services;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.lucasartur.course.entities.Category;
@@ -11,6 +12,7 @@ import com.lucasartur.course.repositories.CategoryRepository;
 @Service
 public class CategoryService {
 
+	@Autowired
 	private CategoryRepository repository;
 	
 	public List<Category> findAll(){
